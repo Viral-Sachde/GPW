@@ -1,0 +1,715 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!--- basic page needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>{% block title %}Viral Sachde | Portfolio{% endblock title%}</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+ ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+
+	<!-- script
+ ================================================== -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+	<script src="{% static 'js/pace.min.js' %}"></script>
+
+
+	<!-- bootstrap bosssdk -->
+	<!-- Latest compiled and minified CSS -->
+	<!-- 
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+	<style>
+		#navbar {
+
+			position: fixed;
+			/* Make it stick/fixed */
+			top: -66px;
+			/* Hide the navbar 50 px outside of the top view */
+			width: 100%;
+			/* Full width */
+			transition: top 0.3s;
+			/* Transition effect when sliding down (and up) */
+		}
+	</style>
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+	<header>
+		<div id="navbar">
+			<div class="row">
+
+				<div class="top-bar">
+					<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+					<div class="logo">
+						<a href="index.html">
+							<h3>Viral Sachde</h3>
+						</a>
+					</div>
+
+					<nav id="main-nav-wrap">
+						<ul class="main-navigation">
+							<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+							<li><a class="smoothscroll" href="#about" title="">About</a></li>
+							<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
+							<li><a class="smoothscroll" href="#services" title="">Services</a></li>
+							<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+						</ul>
+					</nav>
+				</div> <!-- /top-bar -->
+
+			</div> <!-- /row -->
+		</div>
+	</header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+	<section id="intro">
+
+		<div class="intro-overlay"></div>
+
+		<div class="intro-content">
+			<div class="row">
+
+				<div class="col-twelve">
+
+					<h5>Hello, World.</h5>
+					<h1>I'm Viral Sachde.</h1>
+
+					<p class="intro-position"><span>Software Developer</span>
+						<span>Front-end Developer</span>
+						<span>UI/UX Designer</span>
+					</p>
+
+					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+				</div>
+
+			</div>
+		</div> <!-- /intro-content -->
+
+		<ul class="intro-social">
+
+			<li><a id="fb" href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/viral-sachde-18664b24b/"><i class="fa fa-linkedin"></i></a></li>
+			<li><a id="twt" href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/iamviral0p_ftw"><i class="fa fa-instagram"></i></a></li>
+		</ul> <!-- /intro-social -->
+
+	</section> <!-- /intro -->
+
+
+	<!-- about section
+   ================================================== -->
+	<section id="about">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>About</h5>
+				<h1>Let me introduce myself.</h1>
+
+				<div class="intro-info">
+
+					<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+					<p class="lead">I am outgoing, dedicated and open-minded. I get across to people and adjust to
+						changes with ease. I am an optimistic guy who will do my best to maintain a level of quality in
+						my work.</p>
+				</div>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row about-content">
+
+			<div class="col-six tab-full">
+
+				<h3>Profile</h3>
+
+				<ul class="info-list">
+					<li>
+						<strong>Fullname:</strong>
+						<span>Viral Sachde</span>
+					</li>
+					<li>
+						<strong>Birth Date:</strong>
+						<span>March 27, 2004</span>
+					</li>
+					<li>
+						<strong>Job:</strong>
+						<span>Freelancer, Software Developer, Frontend Developer</span>
+					</li>
+					<li>
+						<strong>Website:</strong>
+						<span>www.viralsachde.com</span>
+					</li>
+					<li>
+						<strong>Email:</strong>
+						<span>vsachde74@gmail.com</span>
+					</li>
+
+				</ul> <!-- /info-list -->
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<h3>Skills</h3>
+
+				<ul class="skill-bars">
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>HTML5</strong>
+					</li>
+					<li>
+						<div class="progress percent85"><span>85%</span></div>
+						<strong>CSS3</strong>
+					</li>
+					<li>
+						<div class="progress percent70"><span>70%</span></div>
+						<strong>JQuery</strong>
+					</li>
+					<li>
+						<div class="progress percent95"><span>95%</span></div>
+						<strong>PHP</strong>
+					</li>
+					<li>
+
+						<div class="progress percent75"><span>75%</span></div>
+						<strong>Wordpress</strong>
+					</li>
+
+				</ul> <!-- /skill-bars -->
+
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+			</div>
+		</div>
+
+	</section> <!-- /process-->
+
+
+	<!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Resume</h5>
+				<h1>More of my credentials.</h1>
+
+				<p class="lead">you will find details about my education, certifications, and professional experience
+					that have enabled me to hone my skills and provide top-notch results to clients. I invite you to
+					explore my profile to see how I can help your business achieve its objectives.</p>
+
+			</div>
+		</div> <!-- /section-intro-->
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Work Experience</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Django Developer</h3>
+							<p>February 2023 - March 2023</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Anant Soft Computing </h4>
+							<p>As a Django Developer, I worked on the development of ASC's website during my month-long
+								internship at Anant Soft Computing, gaining valuable experience in utilizing Django
+								components and efficient project management. This reinforced my passion for building
+								innovative web applications.
+							</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Associate Sponsership Head</h3>
+							<p>December 2022 - March 2023</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Ananta - GSFC University Fest</h4>
+							<p>As the Associate Sponsorship Head for Ananta, my college's flagship event, I worked on a
+								special business proposal and was in touch with various potential sponsors. Throughout
+								my tenure, I actively sought out and engaged with potential sponsors, collaborating with
+								them to deliver high-quality event experiences. This experience allowed me to develop my
+								skills in communication, negotiation, and project management.
+							</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Graphics Designer</h3>
+							<p>December 2021 - February 2022</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>CodeClub GSFC University</h4>
+							<p>During first year in college, I was part of the Code Club and was specifically on the
+								graphics team. As a team member, I created numerous posts, posters, and stories for
+								Instagram, showcasing my creativity and design skills. Additionally, I had the
+								opportunity to create special posters for the Comedy Factory featuring Deep Vaidya and
+								Om Bhatt, who were guests at our college. This experience allowed me to enhance my
+								skills in graphic design and develop my ability to create eye-catching visuals.</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Education</h2>
+
+			</div> <!-- /resume-header -->
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>B.Tech Computer Science and Engineering</h3>
+							<p>July 2021 - Present </p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>GSFC University</h4>
+							<p>I am currently studying Computer Science and Engineering in my third semester and so far
+								I have been able to maintain a 8 cgpa. I have also been participating in various events
+								like Ananta-the tech fest and Code Club. It's been difficult at times, but I'm grateful
+								for the opportunities I've had to explore my interests and learn new things.</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Higher Secondary Education</h3>
+							<p>July 2019 - June 2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Sheth VD High School</h4>
+							<p>I attended Sheth VD Highschool in Bhuj Kutch and scored 80% in the GSEB board exams. In
+								the GUJCET exams, I achieved a score of 94.95 PR%.</p>
+						</div>
+
+					</div> <!-- /timeline-block -->
+
+				</div> <!-- /timeline-wrap -->
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /resume-timeline -->
+
+	</section> <!-- /features -->
+
+
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Services</h5>
+				<h1>What Can I Do For You?</h1>
+
+				<p class="lead">Whether you need a stunning website design, compelling copywriting, or effective social
+					media strategies,
+					I'm here to provide customized solutions that meet your unique needs.</p>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-earth"></i></span>
+
+					<div class="service-content">
+
+						<h3>Web design</h3>
+
+						<p class="desc">As a professional web designer, my goal is to create websites that not
+							only look stunning, but also function flawlessly and deliver measurable results for your
+							business.
+							From wireframing to the final launch, I pay attention to every detail in the design process
+							to ensure
+							your website not only looks great, but also delivers results.
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+					<div class="service-content">
+
+						<h3>Web Development</h3>
+
+						<p class="desc">Whether you need a simple website or a complex web application, I'm here to
+							provide
+							professional web development services that deliver results and help your business grow.
+							I specialize in creating robust and scalable websites that are optimized for performance,
+							security, and user experience.
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-paint-brush"></i></span>
+
+					<div class="service-content">
+
+						<h3>Branding</h3>
+
+						<p class="desc">With a keen eye for design and a passion for branding, I help businesses create
+							unique brand identities that stand out in their industry and resonate with their target
+							audience.creating a consistent visual identity across all platforms, I provide comprehensive
+							branding services that help businesses grow and thrive.
+
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>
+
+					<div class="service-content">
+
+						<h3>UI/UX Design</h3>
+
+						<p class="desc">From wireframing and prototyping to creating high-fidelity designs and
+							conducting
+							user testing, I take a data-driven approach to UI/UX design that ensures your digital
+							product meets your business goals and exceeds your customers' expectations.
+
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-image"></i></span>
+
+					<div class="service-content">
+
+						<h3>Graphics Design</h3>
+
+						<p class="desc">
+							With a passion for creativity and a talent for design, I provide graphic design
+							services that help businesses communicate their message and stand out in a crowded market.
+							I have a deep understanding of typography, color theory, and composition, and use that
+							knowledge to create designs that are effiectively beautiful in communicating your
+							message.
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-chat"></i></span>
+
+					<div class="service-content">
+
+						<h3>Consultancy</h3>
+
+						<p class="desc">
+
+							We take a data-driven approach to consultancy, using analytics and user insights to develop
+							actionable strategies that deliver measurable results for businesses of all sizes and
+							industries. Our expertise covers website design, development, digital marketing, and
+							e-commerce strategies.
+						</p>
+
+					</div>
+
+				</div> <!-- /service -->
+
+			</div> <!-- /services-list -->
+
+		</div> <!-- /services-content -->
+
+	</section> <!-- /services -->
+
+	<!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
+
+				<p class="lead">Feel free to contact me via email, phone, or social media, as I'm always happy to hear
+					from potential clients and discuss how I can help bring their ideas to life. Let's connect and
+					create something amazing together.</p>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+				<!-- form -->
+				<form  method="post" action="{% url 'savey' %}">
+					<fieldset>
+
+						<div class="form-field">
+							<input name="name" type="text" id="name" placeholder="Name" value=""
+								minlength="2" required="">
+						</div>
+						<div class="form-field">
+							<input name="email" type="email" id="email" placeholder="Email" value=""
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="subject" type="text" id="subject" placeholder="Subject" value="">
+						</div>
+						<div class="form-field">
+							<textarea name="message" id="message" placeholder="message" rows="10"
+								cols="50" required=""></textarea>
+							 {% csrf_token %}
+						</div>
+						<div class="form-field">
+							<button class="submitform" class="submit">Submit</button>
+							<div id="submit-loader">
+								<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+								</div>
+							</div>
+						</div>
+						{% if messages %}
+ {% for message in messages %}
+
+				<!-- contact-warning -->
+				<div id="message-warning">
+				</div>
+				<!-- contact-success -->
+
+
+<div id="message-success">
+					<i class="fa fa-check"></i>{{message}}<br>
+				</div>
+  {% endfor %}
+ {% endif %}
+
+
+					</fieldset>
+				</form> <!-- Form End -->
+
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /contact-form -->
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Where to find me</h5>
+
+				<p>
+					Vadodara
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email Me At</h5>
+
+				<p>vsachde74@gmail.com<br>
+
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
+
+				<h5>Call Me At</h5>
+
+				<p>Phone: +91 <br>
+
+
+				</p>
+
+			</div>
+
+		</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+	<!-- footer
+   ================================================== -->
+
+	<footer>
+		<div class="row">
+
+			<div class="col-six tab-full pull-right social">
+
+				<ul class="footer-social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/viral-sachde-18664b24b/"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/iamviral0p_ftw"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>© Copyrights viral sachde </span>
+
+				</div>
+			</div>
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
+
+
+		</div> <!-- /row -->
+	</footer>
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+	<script>window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				document.getElementById("navbar").style.top = "-66px";
+			}
+		} </script>
+
+
+
+
+
+</body>
+
+</html>
